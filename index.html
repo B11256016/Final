@@ -21,15 +21,9 @@
         }
 
         .header{
-            color: royalblue;
-            color: #ffffff;
             padding: 15px;
             text-align: center;
             font-size: 20px;
-        }
-
-        h1{
-            text-align: left;
         }
 
         h1{
@@ -57,7 +51,7 @@
 
         .menu li {
             padding: 10px 20px;
-            color: #ffffff;
+            color: white;
             cursor: pointer;
             font-size: larger;
         }
@@ -72,37 +66,34 @@
         }
 
         [class*="col-"] {
-            width: 100%;
+        width: 100%;
         }
-        @media only screen and (min-width: 600px) and (max-width: 768px) {
-            /* For tablets: */
-            .col-1 {width: 16.66%;}
-            .col-2 {width: 33.33%;}
-            .col-3 {width: 50%;}
-            .col-4 {width: 66.66%;}
-            .col-5 {width: 83.33%;}
-            .col-6 {width: 100%;}
+
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+        /* 平板 */
+        .col-1 {
+            width: 25%;
         }
-        @media only screen and (min-width: 768px) {
-            /* For desktop: */
-            .col-1 {width: 8.33%;}
-            .col-2 {width: 16.66%;}
-            .col-3 {width: 25%;}
-            .col-4 {width: 33.33%;}
-            .col-5 {width: 41.66%;}
-            .col-6 {width: 50%;}
-            .col-7 {width: 58.33%;}
-            .col-8 {width: 66.66%;}
-            .col-9 {width: 75%;}
-            .col-10 {width: 83.33%;}
-            .col-11 {width: 91.66%;}
-            .col-12 {width: 100%;}
+        .col-2 {
+            width: 75%;
         }
+    }
+
+    @media only screen and (min-width: 768px) {
+        /* 桌面 */
+        .col-1 {
+            width: 25%;
+        }
+        .col-2 {
+            width: 75%;
+        }
+    }
+
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="BOYNEXTDOOR_Logo.png" width="auto" height="auto">
+        <img src="BOYNEXTDOOR_Logo.png" width="70%" height="auto">
     </div>
     <nav class="menu">
         <ul>
@@ -111,54 +102,57 @@
             <li id="awards">獲獎獎項</li>
         </ul>
     </nav>
-    <div id="content-group" class="content-section" style="display: block;"></div>
-    <h1>團體資料</h1>
-    <img src="group.jpeg" width="auto" height="auto">
+    <div id="content-group" class="content-section" style="display: block;">
+        <h1>團體資料</h1>
+        <img src="group.jpeg" width="70%" height="auto">
+        <h2>
+            <p align="center">BOYNEXTDOOR（韓語：보이넥스트도어）是韓國HYBE旗下公司KOZ娛樂於2023年推出的六人男子音樂團體<br>
+            團體於2023年5月30日發行首張單曲專輯《WHO!》正式出道</p>
+        </h2>
+    </div>
     
-    <h2>
-        <p align="center">BOYNEXTDOOR（韓語：보이넥스트도어）是韓國HYBE旗下公司KOZ娛樂於2023年推出的六人男子音樂團體<br>
-        團體於2023年5月30日發行首張單曲專輯《WHO!》正式出道</p>
-    </h2>
+    <div id="content-number" class="content-section">
+        <h1>成員資料</h1>
+        <img src="number.jpg" width="90%" height="auto">
+        <ol>
+            <li>SUNGHO/성호/ 2003年9月4日</li>
+            <li>RIWOO/리우/ 2003年10月22日</li>
+            <li>JAEHYUN/명재현/ 2003年12月4日</li>
+            <li>TAESAN/태산/ 2004年8月10日</li>
+            <li>LEEHAN/이한/ 2004年10月20日</li>
+            <li>WOONHAK/운학/ 2006年11月29日</li>
+        </ol>
+    </div>
 
-    <div id="content-number" class="content-section"></div>
-    <h1>成員資料</h1>
-    <img src="number.jpg" width="auto" height="auto">
-    <ol>
-        <li>SUNGHO/성호/ 2003年9月4日</li>
-        <li>RIWOO/리우/ 2003年10月22日</li>
-        <li>JAEHYUN/명재현/ 2003年12月4日</li>
-        <li>TAESAN/태산/ 2004年8月10日</li>
-        <li>LEEHAN/이한/ 2004年10月20日</li>
-        <li>WOONHAK/운학/ 2006年11月29日</li>
-    </ol>
+    <div id="content-awards" class="content-section">
+        <h1>獲獎獎項</h1>
+        <img src="awards.jpeg" width="70%" height="auto">
+        <ul style="list-style-type: disc;">
+            <li class="listitem1">K GLOBAL HEART DREAM AWARDS：超級新人獎</li>
+            <li>THE FACT MUSIC AWARDS：Hottest獎</li>
+            <li>SUPERSOUND FESTIVAL：年度超級新人</li>
+            <li>Melon Music Awards：全球新興藝人</li>
+            <li>Asia Artist Award：Emotive獎</li>
+            <li>Asia Artist Award：Best Choice獎</li>
+            <li>Golden Disc Awards：NEXT GENERATION</li>
+        </ul>
+    </div>
 
-    <div id="content-awards" class="content-section"></div>
-    <h1>獲獎獎項</h1>
-    <img src="awards.jpeg" width="auto" height="auto">
-    <ul style="list-style-type: disc;">
-        <li class="listitem1">K GLOBAL HEART DREAM AWARDS：超級新人獎</li>
-        <li>THE FACT MUSIC AWARDS：Hottest獎</li>
-        <li>SUPERSOUND FESTIVAL：年度超級新人</li>
-        <li>Melon Music Awards：全球新興藝人</li>
-        <li>Asia Artist Award：Emotive獎</li>
-        <li>Asia Artist Award：Best Choice獎</li>
-        <li>Golden Disc Awards：NEXT GENERATION</li>
-    </ul>
     <script>
-        document.getElementById('tokyo').addEventListener('click', function() {
-            document.getElementById('content-tokyo').style.display = 'block';
-            document.getElementById('content-paris').style.display = 'none';
-            document.getElementById('content-hongkong').style.display = 'none';
+        document.getElementById('group').addEventListener('click', function() {
+            document.getElementById('content-group').style.display = 'block';
+            document.getElementById('content-number').style.display = 'none';
+            document.getElementById('content-awards').style.display = 'none';
         });
-        document.getElementById('paris').addEventListener('click', function() {
-            document.getElementById('content-tokyo').style.display = 'none';
-            document.getElementById('content-paris').style.display = 'block';
-            document.getElementById('content-hongkong').style.display = 'none';
+        document.getElementById('number').addEventListener('click', function() {
+            document.getElementById('content-group').style.display = 'none';
+            document.getElementById('content-number').style.display = 'block';
+            document.getElementById('content-awards').style.display = 'none';
         });
-        document.getElementById('hongkong').addEventListener('click', function() {
-            document.getElementById('content-tokyo').style.display = 'none';
-            document.getElementById('content-paris').style.display = 'none';
-            document.getElementById('content-hongkong').style.display = 'block';
+        document.getElementById('awards').addEventListener('click', function() {
+            document.getElementById('content-group').style.display = 'none';
+            document.getElementById('content-number').style.display = 'none';
+            document.getElementById('content-awards').style.display = 'block';
         });
     </script>
     
